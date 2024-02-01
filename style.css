@@ -1,0 +1,77 @@
+.tic{
+    background: rgb(218, 43, 180);
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.box:hover{
+    background: rgb(35, 127, 197);
+}
+.info{
+    font-size: 30px;
+
+}
+.gameinfo{
+    padding: 0 40px;
+}
+h1{
+    font-size: 40px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bt{
+    border-top: 0;
+
+}
+.bb{
+    border-bottom: 0;
+
+}
+.br{
+    border-right: 0;
+
+}
+.bl{
+    border-left: 0 ;
+
+}
+#reset{
+    margin: 0 25px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+@media (max-width: 540px){
+    .gamecontainer{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    .container,.gameinfo{
+        padding-left: 70px;
+         
+    }
+    
+
+}
